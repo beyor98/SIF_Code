@@ -23,6 +23,7 @@
 #include <drv/dev/gpio.h>
 
 #define PRINTF_PORT UART0
+#define DEBUG_PRINTF 1
 
 typedef struct
 {
@@ -47,7 +48,7 @@ RET_CODE UartPinMuxConfig(UART_Device_T *pUART)
         s_uartPinMux[0].alternate = GPIOD6_AF0_UART0TX;
         s_uartPinMux[1].pin = GPIO_PIN_7;
         s_uartPinMux[1].device = GPIOD;
-        s_uartPinMux[1].alternate = GPIOD7_AF0_UART0RX;
+        s_uartPinMux[1].alternate = GPIOD6_AF0_UART0TX;
 #endif
 #if defined(CHIP_GM6611) || defined(CHIP_GM6611B)
         s_uartPinMux[0].pin = GPIO_PIN_13;

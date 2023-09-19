@@ -411,6 +411,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\lib\common\common.c</FilePath>
             </File>
+            <File>
+              <FileName>printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\lib\common\printf.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -435,6 +440,31 @@
               <FileName>dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\drv\dev\dma\dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\dev\uart\uart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module</GroupName>
+          <Files>
+            <File>
+              <FileName>etm_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\etm_module.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\gpio_module.c</FilePath>
+            </File>
+            <File>
+              <FileName>sif_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\sif_module.c</FilePath>
             </File>
           </Files>
         </Group>
