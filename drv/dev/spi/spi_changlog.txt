@@ -1,0 +1,21 @@
+						Module: SPI
+date: 2020.11.25
+    -- fix spi transfer bugs. 
+		1.add CHIP_GM6621 in spi_dev.h, then some register bits will not be used on chip gm6621.
+		2.remove continue data configuration in spi config function, it will be configured in transfer function according transfer frames.
+		3.remove single wire configuration.
+		4.fix some bugs in transfer function, now its tx, rx, halfduplex master mode, and fullduplex function is ok.
+        5.remove cvss config.
+        6.add flush api.
+	-- add examples.
+		1.add flash erase, write, read, fast read examples.
+	-- modify spi example code, easier for user to use spi transfer.
+
+date: 2021.01.27
+    -- remove some unused registers.
+        1.microwire, DMA_INT,RCONT and some interrupt status and interrupt enable registers.
+        2.use tx fifo empty status to replace busy status as fifo transfer finish flag because of busy is always set in gm6601 ti mode.
+        3.example code add comment, gm6601B only support spi0, and gm6621 support tx and rx threshold 2 and 4, the others are 8 and 8.
+	4.when use ti mode, config polarity and phase as mode 1(polarity 0, phase 1).
+date:2021.11.18
+       Platform  add support for F6601C 

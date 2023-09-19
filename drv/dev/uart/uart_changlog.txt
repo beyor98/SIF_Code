@@ -1,0 +1,42 @@
+/*****************************************************
+********************Module:UART***********************
+******************************************************/
+
+
+
+
+|-Date 2021.01.25
+
+   
+    
+1.uart.c中UART_Init API添加GM6621 UART时钟选择的配置，将CLK1中对UART配置的系统寄存器对应位清0；
+  
+    
+2.删除IRDA功能相关的宏定义；
+    
+3.删除RS485 DE功能相关的宏定义；
+    
+4.删除TIMEOUT_NO_WAIT相关语句；
+    
+5.删除UART_DR_TX宏定义；
+    
+6.删除Uart_TwoBoards_Test example；
+    
+7.删除FEATURE_UART_RINGBUFFER相关定义;
+
+|-Date 2021.02
+1.在setmode函数中，增加对RX、TX是否为空的判断；			
+ 
+|-Date 2021.02.20
+1. 回退代码，不在UART_SetMode和UART_EnableInterrupts里等待Transmitter Idle
+2. 恢复Transmitter Idle中断，但增加一个单独事件UART_EVENT_TX_IDLE
+3. 增加一个完整半双工示例
+4. 修正UART_GetTransferStatus
+
+ 
+
+-Date 2021.07.30
+1.在UART_DeInit函数中增加对hUART和device是否为空判断；
+
+-Date 2021.11.19
+1.添加F6601C相关的宏定义；

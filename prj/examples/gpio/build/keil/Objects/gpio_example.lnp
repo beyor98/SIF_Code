@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+".\objects\gpio_example.o"
+".\objects\sysinit.o"
+".\objects\systick.o"
+".\objects\common.o"
+".\objects\clock.o"
+".\objects\gpio.o"
+".\objects\etm.o"
+".\objects\dma.o"
+".\objects\startup_f6601c.o"
+--library_type=microlib --strict --scatter ".\Objects\gpio_example.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\gpio_example.map" -o .\Objects\gpio_example.axf

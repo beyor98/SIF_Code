@@ -1,0 +1,39 @@
+
+Date: 2018.10.08
+
+commit 01f2e1b72618c47a4c55fd3f83bf8ac32e6c97dc
+Author: Mike.Zheng <mike@mail.gerrit.com>
+Date:   Mon Oct 8 16:18:06 2018 +0800
+
+    CAN: Remove Bus Err Flag
+
+    Change-Id: I43144f48cf74cb88bb2929103e003428025b4c99
+
+
+-- fix can transter err when multiple thread run.
+   Because tx and rx use the same err flag, when tx send error.
+   we will aslo think that rx is error somtimes
+
+
+Date: 2021.08.04
+commit f21852a04bc87a71e206618c0df6a2208a22b540
+Author: mike_zheng <mike_zheng@dq55-850263>
+Date:   Wed Aug 4 18:29:57 2021 +0800
+
+    CAN: Remove R0/R1
+    
+    Change-Id: I17573704e95bfc4898e443ed1cab18ba06023a2a
+
+-- remvoe unusefull r0/r1 for struct CAN_FrameInfor_T 
+	
+	
+	
+commit 840e07e23d425c121a0d92b39c512769c77cee96
+Author: mike_zheng <mike_zheng@dq55-850263>
+Date:   Wed Aug 4 16:40:42 2021 +0800
+
+    CAN: Remove R0/R1 Reserver Function For Can Data Frame
+    
+    Change-Id: I79c51965fca19317a670a5e2fde749332ac558f3
+
+-- remvoe unusefull r0/r1 infor for can frame

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package schemaVersion="1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>Keil</vendor>
+  <url></url>
+  <name>GMA01xx_DFP</name>
+  <description>GreeMicroelectronics GMA01 Series Device Support</description>
+
+  <releases>
+    <release version="1.0.0">
+     Initial version of GMA01 Device Family Pack
+    </release>
+  </releases>
+
+  <keywords>
+    <!-- keywords for indexing -->
+    <keyword>Gree</keyword>
+    <keyword>Device Support</keyword>
+    <keyword>Device Family Package GreeMicroelectronics</keyword>
+    <keyword>GMA01</keyword>
+    <keyword>GMA</keyword>
+  </keywords>
+
+  <devices>
+    <family Dfamily="GMA01 Series" Dvendor="GreeMicroelectronics:193">
+      <processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
+      <!--book    name="Documents\dui0497a_cortex_m0_r0p0_generic_ug.pdf" title="Cortex-M0+ Generic User Guide"/-->
+        <description>        	
+GreeMicroelectronics' GMA01 series provides replacement of 8-bit mcu with high performance and high ESD/EFT electrical characteristics.
+        </description>
+
+        <feature type="WDT"           n="2"/>
+        <feature type="RTC"           n="32768"/>
+        <feature type="Temp"          n="-40"     m="85"/>
+
+      <!-- ************************  Subfamily 'GMA0164'  **************************** -->
+      <subFamily DsubFamily="GMA0164">
+        <processor Dclock="48000000"/>
+        <!--compile header="Device\Include\gma0164xx.h" define="GMA0164"/-->
+        <!--debug svd="SVD\GMA0164.svd"/-->
+        <!--book name="Documents\DM00091010.pdf" title="GMA0164 Series Reference Manual"/-->
+        <!--book name="Documents\DM00088500.pdf" title="GMA0164 Data Sheet"/-->
+
+        <feature type="ADC"           n="1"       m="12"/>
+        <feature type="VCC"           n="2.70"    m="5.50"/>
+		
+		<!-- *************************  Device 'GMA0164QP64'  ***************************** -->
+        <device Dname="GMA0164QP64">
+          <memory     id="IROM1"                      start="0x00000000"  size="0x10000"     startup="1"   default="1"/>
+          <memory     id="IRAM1"                      start="0x20000000"  size="0x1000"      init   ="0"   default="1"/>
+          <algorithm  name="Flash\GMA01xxx_P64KB.FLM" start="0x00000000" size="0x10000"     RAMstart="0x20000000"  RAMsize="0x1000"  default="1"/>
+	  <!--algorithm  name="Flash\GMA01xx_OPT.FLM"    start="0x1FFFF800"  size="0x0010"                   default="0"/-->
+
+          <feature type="Timer"         n="3"       m="16"/>
+          <feature type="IOs"           n="58"/>
+          <feature type="SPI"           n="1"       m="18000000"/>
+          <feature type="I2C"           n="2"/>
+          <feature type="USART"         n="3"       m="6000000"/>
+          <feature type="QFP"           n="64"/>
+        </device>
+      </subFamily>
+
+    </family>
+  </devices>
+
+  <conditions>
+    <!-- Compiler Conditions -->
+    <condition id="Compiler ARMCC">
+      <require Tcompiler="ARMCC"/>
+    </condition>
+
+    <!-- Device Conditions -->
+    <condition id="GMA0164">
+      <description>GreeMicroelectronics GMA01 Devices</description>
+      <require Dvendor="GreeMicroelectronics:193"  Dname="GMA0164*"/>
+    </condition>
+
+    <!-- Device + CMSIS Conditions -->
+    <condition id="GMA0164 CMSIS">
+      <description>GreeMicroelectronics GMA0164 Devices and CMSIS-Core</description>
+      <require condition="GMA0164"/>
+      <require Cclass="CMSIS" Cgroup="CORE"/>
+    </condition>
+  </conditions>
+
+  <components>
+    <!-- Startup GMA0164 -->
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="GMA0164 CMSIS">
+      <description>System Startup for GreeMicroelectronics GMA0164 Devices</description>
+      <files>
+        <!--file category="include"   name="Device\Include\"/-->
+        <!--file category="sourceAsm" name="Device\Source\ARM\startup_stm32f030.s" attr="config" version="1.4.0" condition="Compiler ARMCC"/>
+        <file category="sourceC"   name="Device\Source\system_gma01xx.c"      attr="config" version="1.4.0"/-->
+      </files>
+    </component>
+
+    <!-- GMA01-Fpga Board Support -->
+    <bundle Cbundle="GMA01-Fpga" Cclass="Board Support" Cversion="1.0.0">
+      <description>GreeMicroelectronics GMA01-Fpga Board</description>
+      <doc></doc>
+      <component Cgroup="LED" condition="GMA0164 CMSIS">
+      <description>LED driver for GreeMicroelectronics GMA01-Fpga Board</description>
+        <files>
+          <!--file category="source" name="Boards\ST\STM32F0-Discovery\Common\LED_STM32F0-Discovery.c"/-->
+        </files>
+      </component>
+      <component Cgroup="Buttons" condition="GMA0164 CMSIS">
+      <description>Button driver for GreeMicroelectronics GMA01-Discovery Board</description>
+        <files>
+		<!--file category="include"   name="Device\Include\"/-->
+        <!--file category="sourceC" name="Boards\ST\STM32F0-Discovery\Common\Buttons_STM32F0-Discovery.c"/-->
+        </files>
+      </component>
+    </bundle>
+  </components>
+
+  <boards>
+    <board vendor="GreeMicroelectronics" name="GMA01-Discovery" revision="Rev.A.1">
+      <description>GreeMicroelectronics GMA01-Discovery Board</description>
+      <book category="overview"  name="http://www.gree.com/" title="GMA01-Discovery Web Page"/>
+      <mountedDevice    deviceIndex="0" Dvendor="GreeMicroelectronics:193" Dname="GMA0164QP64"/>
+      <compatibleDevice deviceIndex="0" Dvendor="GreeMicroelectronics:193" DsubFamily="GMA0164"/>
+      <feature type="ODbg"      n="1"              name="On-board ST-LINK/V2"/>
+      <feature type="XTAL"      n="8000000"/>
+      <feature type="PWR"       n="5"              name="USB Powered"/>
+      <feature type="PWR"       n="3"  m="5"       name="External Supply"/>
+      <feature type="Button"    n="2"              name="Push-buttons: User and Reset"/>
+      <feature type="Accelerometer" n="1"          name="LIS302DL or LIS3DSH ST MEMS 3-axis accelerometer"/>
+      <feature type="LED"       n="8"              name="LEDs: USB COM, 3.3 V Power, Two user"/>
+      <debugInterface adapter="ST-Link" connector="Mini-USB"/>
+    </board>
+  </boards>
+
+
+</package>

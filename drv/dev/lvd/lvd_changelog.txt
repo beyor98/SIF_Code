@@ -1,0 +1,39 @@
+------------------------------------------------------------------
+                     LVD Driver ChangeLog
+------------------------------------------------------------------
+·Date:      Tue, 23 Nov 2021
+·Author:    terry_lee
+·Platform:  GM6601B、GM6611B、GM6621、F6621B、F6601C
+·Content:
+            1.添加了F6601C的支持
+            2.重构了LVD驱动代码，使得阅读和维护更加容易
+            3.修改了ChangeLog
+ 
+
+------------------------------------------------------------------
+·Date:      Wed, 20 Jan 2021
+·Author:    Steven.Lee
+·Platform:  GM6601、GM6611、GM6621
+·Content:
+            1.更改了dev的注释问题
+            2.更新了init函数，使得GM6611B和GM6621的LVD2只有中断没有reset
+              其他LVD1和LVD3只有reset没有中断
+            3.更新LVD_GetVDXFlag函数，使其能够正确获取GM6611B的状态
+            
+------------------------------------------------------------------
+·Date:      Wed, 24 Apr 2019
+·Author:    Angrad.Yang
+·Platform:  GM6601、GM6611、GM6621
+·Content:
+            1.在Driver层捕获中断，再调用用户层callback.
+            2.修复Init时未显式配置VD模块int_en的bit位，
+                导致可能在部分平台无法正确出现中断的问题。
+            3.简化Demo。
+
+------------------------------------------------------------------
+·Date:      Wed, 19 Sep 2018
+·Author:    Angrad.Yang
+·Platform:  GM6601、GM6611、GM6621
+·Content:
+            1.完善功能，配置Reset须等待时钟稳定。
+

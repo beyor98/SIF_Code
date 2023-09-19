@@ -1,0 +1,20 @@
+						Module: Sysinit
+
+
+date: 2021/01/22
+添加通过宏
+#define SYS_CLOCK    48000000                      
+//#define OSC_EXTERNAL_CLOCK
+来配置系统时钟，系统时钟可以配置为8M或者48M，通过：
+#define SYS_CLOCK    48000000 或者 #define SYS_CLOCK    8000000 来配置。
+当定义了宏OSC_EXTERNAL_CLOCK时，使用外部HOSC，当未定义，默认使用内部HIRC                        
+                        
+                        
+date: 2021/01/22
+    修改配置48M外部时钟，OSC_SetConfig配置错误
+原程序：
+s_OscConfig.oscMask  = OSC_MASK_INTERNAL_HIGH;
+s_OscConfig.oscState = OSC_INTERNAL_HIGH_ON;
+修改为：
+s_OscConfig.oscMask  = OSC_MASK_EXTERNAL_HIGH;
+s_OscConfig.oscState = OSC_EXTERNAL_HIGH_ON;

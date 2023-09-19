@@ -1,0 +1,87 @@
+------------------------------------------------------------------
+                     ETM Driver ChangeLog
+
+------------------------------------------------------------------
+·Date:      Wed, 25 Apr 2019
+·Author:    Edward.Zhu
+·Platform:  GM6621
+·Content:
+            1.在etm_pwm_example.c测试代码中加入以下三个宏加以隔开test case：
+			    #define ETM_CAPTURE
+                #define ETM_Trigger_ADC
+                #define ETM_Breakin
+			当需要测试相应test case时，将对应的宏打开即可；
+			当需要测试其他的test case时，请将另外的宏注释掉。
+			
+·Date:      Wed, 25 Apr 2019
+·Author:    Edward.Zhu
+·Platform:  GM6621
+·Content:
+
+            1.修改etm.c文件第449与第451行为如下：
+            IO_BIT_CLEAR(SYSDEV->ESS, SYS_ESS_EN);
+		    IO_BIT_CLEAR(SYSDEV->DIPS, SYS_ESS_EN);
+			原先的SDK对应的两行为
+            IO_BIT_SET(SYSDEV->ESS, SYS_ESS_EN);
+		    IO_BIT_SET(SYSDEV->DIPS, SYS_ESS_EN);
+           
+·Date:      Sat, 7 Sep 2019
+·Author:    Edward.Zhu
+·Platform:  All
+·Content:
+			1.去掉了GM6601/GM6611的CHIP以及与这两个CHIP相关的程序内容；
+			2.在GM6601B/GM6611B/GM6621中，定时器叫ETM；而在F6621B中，定时器叫TIM。
+			所以如果使用的芯片是GM6601B/11B/21，请使用ETM driver，如果使用的芯片是F6621B，请使用TIM driver。			
+			
+·Date:      Thurs, 17 Dec 2020
+·Author:    Sophia.wu
+·Platform:  GM6621
+·Content:
+
+            1.ETM break功能的驱动代码与spec不符(与GM6601B break共用一段代码，但是11B与01B在spec中寄存器位对应不一致)		
+			2.etm.c中 ETM_TriggerADC API缺少对GM6611B 的宏，无法调用此API		
+			3.ETM输入捕获功能：选择ETM0 channel3 N3或者channel4 P4时没有捕获值		
+			4.ETM Inputcapture by DMA功能失败，没有捕获值		
+			5."Gpio.h中GM6611B ETM 对应pimux引脚定义错误：GPIOF1_AF2_ETMACH1与GPIOF2_AF2_ETMACH2应为GPIOF1_AF2_ETM0CH1与GPIOF2_AF2_ETM0CH2"		
+			6.GM6621 pimux引脚对应错误，捕获功能callback函数调用错误
+            
+·Date:      Fri, 15 Jan 2021
+·Author:    Sophia.wu
+·Platform:  GM6621
+·Content:
+
+            1.修改etm.c GM6611b ETM使用TC_IN port和DEEP_STOP_EN进行breakin时失败		
+			
+·Date:      Friday, 16 April 2021
+·Author:    Aaron.wu
+·Platform:  GM6621
+·Content:
+
+            1.etm.c中，ETM_InitOnePulse API 设置polarity寄存器错误
+            2.etm_pwm_example.c中，捕获功能中ETM1Callback无法调用，未注册
+
+·Date:      Wed, 18 Aug 2021
+·Author:    chenliwei
+·Platform:  GM6621
+·Content:
+
+            1.etm.c中，ETM_SetPWMChannel API 6621 ETM0的Channel3、Channel4配置
+	    2.etm.c中，ETM_OCConfig pETM->CMP1寄存器清0	    
+            3.etm_pwm_example.c中，修改时钟配置， GM660X是配置时钟，其他的GM6611、 GM6611B、GM6621是设置分频。
+	    4.etm.h 增加GM6621 struct ETM_PWMConfig_T 通道成员。
+		
+·Date:      Thursday, 9 Sep 2021
+·Author:    chenliwei
+·Platform:  F6601C
+·Content:
+		1.etm.c中，增加若干 || defined(CHIP_F6601C)) 宏定义分支
+		2.etm_dev.h中，增加若干 || defined(CHIP_F6601C)) 宏定义分支
+		3.Z:\rabbit_6601C_test\rabbit\prj\Eval\F6601C目录下增加ETM_TEST测试工程
+		4.etm.h中，增加若干 || defined(CHIP_F6601C)) 宏定义分支
+
+·Date:      Wed, 22 Nov 2021
+·Author:    chunyuan_su
+·Platform:  F6601C
+·Content:
+            1.Support F6601C.
+

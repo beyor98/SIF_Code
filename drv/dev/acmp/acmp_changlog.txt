@@ -1,0 +1,18 @@
+/*****************************************************
+********************Module:ACMP***********************
+******************************************************/
+
+|-Date 2018.02
+  ACMP支持GM6601,GM6611,GM6601B,GM6611B,GM6621，但是ACMP设计上并不完全相同，具体请参考ACMP datasheet。
+  其中GM6621 支持电池电量检测功能。本版本移除了GM6621 ACMP 充电的API功能.
+|-Date 2021.01
+  1、添加了lp32k模式所需的LIRC时钟
+  2、去除了PC12和PC13引脚作为正负极，添加了PA7和PA9引脚
+  3、更正了驱动ACMP_SAM_TrigerMode API中ACMP_DEV_0的channel值配置
+  4、更正了驱动ACMP_DACVOLCampreMode API的ACMP_DEV_1迟滞
+|-Date 2020.09.28
+  根据模拟给出的硬件图，GM6621 ACMP的channel移除了一些通道，在驱动中将pinmux以及channel配置
+  做了相应更改。
+|-Date 2021.10.25
+  F6601C中，DAC_ACMP的参考电压固定为5V，没有3.3V的参考电压，在ACMP的配置中不对DAC_valule进行配置；
+  并且DAC更改为10位DAC，驱动中对DAC电压转换值进行更改。

@@ -1,0 +1,30 @@
+						Module: I2C
+date: 2019.04.20
+    -- fix i2c bug. When I2C send byte error, we cann't get correct error status 
+    immediately, until the next byte be send.
+        When send the first byte, we delay some time, then check error status. Just
+    the first byte, not others.
+	
+date: 2019.04.15
+    -- fix i2c bug. When I2C bus is error, such as connect data(clk) to ground or
+    connect data to clk, the I2C master will not change to inactive status.
+        Add timeout check, if not correct in expected time, will return error.
+
+date: 2019.03.15
+    -- fix i2c bug.	When using I2C interrupt mode send data, the I2C_CommonIRQHandler
+    function is low efficient, just one iqr send one byte. If large data transmit, thie maybe 
+    cause bugs.
+        Add I2C_DataCmdRegManipulate_Data_Cmd_Null function for irq handle, we can send max to 8
+    bytes once irq.
+date: 2021.1.25
+	--fix i2c bug. when using slave_tx and master_rx communicate,transfer one byte data,the tx_flag is error
+		I2C_CommonIRQHandler add i2c_callback,it makes flag equal to 1.
+date: 2021.2.1
+	--fix i2c bug.when GM6601B using 400k baudrate ,i2c loop will fail.
+		change i2c set_up & hold_time
+	--fix i2c bug.dma mode tranfer fail,beacuse dma transfer done,but the flag is 0.
+		dma_flag should be set to zero and enable i2c.
+date:2021.2021.10.13
+	--fix i2c bug.when i2c masterTxMode is GENERAL_CALL_MODE or START_BYTE_MODE,i2c wave form is wrong.
+		I2C_CTRL_GCSTA should bu bit9 and I2C_CTRL_GSEN shuould be bit10
+

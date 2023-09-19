@@ -1,0 +1,21 @@
+/*****************************************************
+********************Module:ADC***********************
+******************************************************/
+
+|-Date 2018.02
+  ADC支持GM6601,GM6611,GM6601B,GM6611B,GM6621，但是ADC设计上并不完全相同，具体请参考ADC datasheet。
+  (1)其中GM6621 增加了新的功能（支持DISCONTINUE MODE\HARDWARD TRIGER），需配置外部通道，API 为ADC_SelectExternChannel
+  (2)增加了GM6611B GPIO trigger ADC功能
+
+|-Date 2020.11  
+	家技部使用GM6601B ADC时，发生了没有及时读DATA FIFO的情况，因为ADC data fifo深度是固定的8个，没有及时读走当前转换值，下一次
+	转换值也会存在FIFO中，导致用户层获取的数据会串位，基于此对驱动进行更改：
+	（1）在API ADC_Triger中，增加了在ADC IDLE状态且DATA FIFO不为空的情况下，读空DATA FIFO
+	（2）ADC_Triger API的返回类型由void更改为int
+	（3）增加了两个宏（ADC_IDLE_STATUS和ADC_DFIFO_EMPTY_STATUS）
+|-Date 2021.1
+	1、更改了ADC_ReadConvertValue API的返回值RET_ONGOING注释错误
+	2、ADC_ConvertStatus_T结构体的参数DMA_FINISH_STATUS注释错误
+	3、去除GM6621 ADC_CONFIG_SAMPEDGE相关的配置
+Date: 2021.11.18 	
+	Platform  add support for F6601C 

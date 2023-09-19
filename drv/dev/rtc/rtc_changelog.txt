@@ -1,0 +1,69 @@
+------------------------------------------------------------------
+                     RTC Driver ChangeLog
+
+------------------------------------------------------------------
+·Date:      Wed, 18 Nov. 2021
+·Author:    Sunny.Yang
+·Platform:  GM6601B、GM6611B、GM6621,F6601C
+·Content:
+						1。增加F6601C 
+						2. 增加读写F6601C RTC寄存前先检查系统寄存器状态位是否忙。
+							 2.1 增加Check_SysReg（）函数；
+							 2.2 增加CHECK_IO_BIT_GET（）函数；
+							 2.3 增加CHECK_IO_BIT_SET（）函数；
+							 2.4 增加CHECK_IO_BIT_CLEAR（）函数；
+							 2.5 增加CHECK_IO_BITS_GET（）函数
+							 2.6 增加CHECK_IO_BITMASK_SET（）函数；
+				  3。增加 TIMER0_MS_TICK_MASK 定义；
+
+------------------------------------------------------------------
+·Date:      Wed, 19 Jan 2021
+·Author:    steven.lee
+·Platform:  GM6601B、GM6611B、GM6621
+·Content:
+            1.修改部分注释的错误
+            2.修改了寄存器的配置:
+            	2.1删除TAMPER3宏定义；
+	            2.2修改ALARM_DAY_MASK定义错误问题；
+				2.3修改TIMER0_TICKVALUE_MASK定义错误问题；
+				2.4修改COUNTER_DIV64和COUNTER_DIV256定义错误问题
+            3.增加自适应配置tick，禁止使用48M时钟
+            4.修改了闹钟不能在零点配置的bug
+            5.解决了GM6611B万年历计时不准确的问题
+            6.删除Deinit API；
+			7.RTC_SetTime、RTC_SetDate、RTC_SetDateTime API删除GM6601B宏定义
+
+
+------------------------------------------------------------------
+·Date:      Wed, 24 Apr 2019
+·Author:    Angrad.Yang
+·Platform:  GM6601、GM6611、GM6621
+·Content:
+            1.修复GM6601一个word偏移造成counter无法正确配置的bug.
+            2.修复GM6601的TickValue值配置不正确造成时间不准确的bug.
+            3.更正GM6611和GM6621选择FCLK（48Mhz），
+                TickValue按16Mhz计数，即RTC 1s等于实际1/3s.
+
+------------------------------------------------------------------
+·Date:      Sat, 20 Apr 2019
+·Author:    Angrad.Yang
+·Platform:  GM6621
+·Content:
+            1.移除旧版RTC使用LOSC作为时钟源时，必须先使能HOSC的操作. 
+
+------------------------------------------------------------------
+·Date:      Wed, 17 Apr 2019
+·Author:    Angrad.Yang
+·Platform:  GM6601、GM6611
+·Content:
+            1.移除改版后不必要的外部时钟源使能的忙等时间，
+                改为读时钟源的稳定标志位.
+
+------------------------------------------------------------------
+·Date:      Thu, 1 Nov 2018
+·Author:    Angrad.Yang
+·Platform:  GM6601、GM6611
+·Content:
+            1.当时钟源不是OSCLS时，不使能LOSCOUT和LOSCIN.
+
+

@@ -1,0 +1,17 @@
+------------------------------------------------------------------
+                     IRTX Driver ChangeLog
+
+------------------------------------------------------------------
+·Date:      2021.1.20
+·Author:    Sophia.wu
+·Platform:  GM6621
+·Content:
+			1.irtx.h定义的模式（IRTX_WorkMode_T）和spec上的模式有出入，0x1应为Manual mode，而不是PWM mode
+			2.RET_CODE IRTX_ConfigPinmux(void) API引脚配置函数建议放在应用层，而不是驱动code中
+			3.irtx.dev.h中IRTX_MANUL_LENGTH1ST和IRTX_MANUL_LENGTH2ST定义错误
+			4.spec中IRINTEN寄存器没有第31位使能中断，而驱动中有相关定义
+			5.Max segment定义为4，导致F0F1F2F3F5协议无法发送，应定义为5
+			6.发送IRTX_PROTOCOL_F0F1F2F5协议，仅发送了前三个F码，最后一个F5码没有波形输出
+			7.changelog描述均为LPTIM模块，应删除LPTIM模块相关内容
+
+

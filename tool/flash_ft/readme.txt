@@ -1,0 +1,2 @@
+1. Before first compiling, select Linker->Use Memory Layout from Target Dialog, press OK button and then compile
+2. Afert first compiling, de-select Linker->Use Memory Layout from Target Dialog, press OK button and then compile

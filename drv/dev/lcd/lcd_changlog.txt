@@ -1,0 +1,5 @@
+						Module: LCD
+date: 2021.01.20
+    -- update contrast config, GM6621 config from 0~15, others config from 0~7
+    -- modify com select comment
+    

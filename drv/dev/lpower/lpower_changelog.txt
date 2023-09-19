@@ -1,0 +1,16 @@
+------------------------------------------------------------------
+                     lpower Module ChangeLog
+
+------------------------------------------------------------------
+·Date:      Wed, 22 Apr 2019
+·Author:    Sophia.Wu
+·Platform:  GM6621 F6621B
+·Content:
+            1.新增Lpower API.
+			
+·Date:      Fri, 15 Jan 2021
+·Author:    Sophia.wu
+·Platform:  GM6621
+·Content:
+			1.增加sleep mode,deep sleep mode api
+			2.增加stop mode，deep stop mode in gm6611b

@@ -1,0 +1,1 @@
+	每5s系统从stop mode唤醒，再进入stop mode.

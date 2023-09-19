@@ -1,0 +1,13 @@
+						Module: systick
+date: 2021.1.15
+    -- Fix systick bug. Compensation for one millisend shall consider elapsed interrupts count 
+       if systick frequency is lower than 1 millisend. Interval calculation shall be run before 
+       you get start systime.
+date: 2020.12.23
+    -- Add Systick_Init_Ex. Make systick frequency/interrupt priority/start-time configurable.
+    -- Add Systick_GetSystime. Systime is now 64bit and provided to user to count time by milliseconds. 
+    -- Remove os callback.  User must redefine Systick_Callback to insert code to process timer 
+       interrupt, such as os scheduling or timer queue, never change driver any code in Systick_InterruptHandler.  
+    -- Improve precision and robustness of SysTick_DelayUS and SysTick_DelayMS. By comparing the difference of systick's
+       inital value and current value to check whether it overflows and rewinds. By checking the milliseconds's conter
+       in systick interrupt routine to guarantee the delay function exit in time. 

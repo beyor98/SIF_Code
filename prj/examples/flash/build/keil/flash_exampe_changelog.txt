@@ -1,0 +1,13 @@
+------------------------------------------------------------------
+                     flash example ChangeLog
+
+------------------------------------------------------------------
+·Date:      Jan, 24 Apr 2021
+·Author:    Aaron.Wu
+·Platform:  GM6601、GM6611、GM6621
+·Content:
+    1、change Linker config :
+        Use Memory Layout for Target Dialog 
+    2、remove Flash_example.sct
+
+

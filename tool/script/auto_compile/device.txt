@@ -1,0 +1,8 @@
+GM6601ALQFP44:can/kbi/irtx/lcd/irtx/kbi/
+GM6601ALQFP64:can/kbi/irtx/lcd/irtx//kbi/
+GM6601BLQFP44:can/kbi/irtx/lcd/irtx//kbi/bldc_demo/
+GM6601BLQFP64:can/kbi/irtx/lcd/irtx//kbi/bldc_demo/
+GM6611LQFP100:bldc_demo/irtx/kbi/
+GM6611BLQFP100:bldc_demo/irtx/kbi/
+GM6621LQFP44:can/bldc_demo/hwir/
+GM6621LQFP64:can/bldc_demo/hwir/

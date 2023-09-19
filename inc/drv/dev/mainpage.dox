@@ -1,0 +1,19 @@
+/**
+
+\mainpage SDK API Usage Guide of GM66xx Series MCUs
+
+GREE GM66xx series microcontroller SDK is an extensive suite of robust hardware drivers,
+system start up files, system services and friendly readable API, it designs to simplify
+and accelerate application development on GREE Microcontroller GM66xx series MCUs. 
+The adoption of layering structure makes the SDK architecture simplified and improves 
+the readability, the drivers of different IP in GM66xx chipset is wrapped, software developer
+only need to familiar with the API of the drivers, since the API is friendly designed, 
+it is easy to use to develop the application.
+
+All the source code except the start up procedure in SDK is written in C, it is open source
+under a permissive license.
+
+The SDK architecture of GM66xx series microcontroller is as the following figure show:
+\image html SDK_Architecture.jpg "SDK Architecture"
+
+*/

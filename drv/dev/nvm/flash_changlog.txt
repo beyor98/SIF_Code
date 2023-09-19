@@ -1,0 +1,6 @@
+						Module: Sysinit
+
+date: 2021/01/22
+1、remove bit0 in flash controller because bit0 is reserved  CHIP_GM6601B/CHIP_GM6611B 
+2、0x48 is version register， fix comment error. CHIP_GM6611B
+3、添加F6601C相关的宏定义

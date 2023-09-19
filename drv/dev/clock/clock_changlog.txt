@@ -1,0 +1,26 @@
+﻿						Module: Sysinit
+
+date: 2021/01/22
+ 修改注释错误，1KHz修改为32KHz
+ GM6601B：
+ 1、修改 Clock_GetConfig API获取PLL
+ 2、peripheral clock gate定义错误，与spec不符，根据Spec进行修改
+ GM6611B：
+ 1、修改 Clock_GetConfig API获取LCD系统时钟错误
+ 2、peripheral clock gate定义错误，与spec不符根据Spec进行修改
+ 3、删除PeriphClk_GetConfig API 重复获取HIRX的时钟语句
+ GM6621： 
+ 1、修改ADC_CLOCK_HIRC宏定义错误
+ 2、peripheral clock gate定义错误，与spec不符根据Spec进行修改
+ 3、修改LPSTM时钟配置
+ 
+ date: 2021/02/20
+ GM6601B：
+ 修改ADC、UART时钟模块宏定义注释错误
+ GM6621：
+ 修改SYS_SCS_CS_MASK的定义错误，因为GM6621时钟源选择有3bit。
+ 
+  
+date: 2021/11/19
+  1.添加F6601C相关的宏定义；
+date: 2021/11/26  1.在CLOCK_SetConfig函数中，添加解锁flash的key的操作，以便于成功设置latency。
