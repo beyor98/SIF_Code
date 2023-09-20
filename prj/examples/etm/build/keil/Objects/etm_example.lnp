@@ -1,0 +1,17 @@
+--cpu Cortex-M0
+".\objects\etm_pwm_example.o"
+".\objects\common.o"
+".\objects\printf.o"
+".\objects\sysinit.o"
+".\objects\systick.o"
+".\objects\clock.o"
+".\objects\gpio.o"
+".\objects\etm.o"
+".\objects\pes.o"
+".\objects\adc.o"
+".\objects\dma.o"
+".\objects\startup_emf660x.o"
+--library_type=microlib --strict --scatter ".\Objects\etm_example.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\etm_example.map" -o .\Objects\etm_example.axf

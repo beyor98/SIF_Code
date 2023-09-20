@@ -1,0 +1,501 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    etm_pwm_example.o(i.ETM0Callback) refers to etm.o(i.ETM_SetPWMDuty) for ETM_SetPWMDuty
+    etm_pwm_example.o(i.ETM0Callback) refers to etm_pwm_example.o(.data) for .data
+    etm_pwm_example.o(i.ETM1Callback) refers to etm.o(i.ETM_GetCaptureValue) for ETM_GetCaptureValue
+    etm_pwm_example.o(i.ETM1Callback) refers to etm_pwm_example.o(.data) for .data
+    etm_pwm_example.o(i.ETM_CaptureFunc) refers to memseta.o(.text) for __aeabi_memclr4
+    etm_pwm_example.o(i.ETM_CaptureFunc) refers to etm.o(i.ETM_InitCapture) for ETM_InitCapture
+    etm_pwm_example.o(i.ETM_CaptureFunc) refers to etm.o(i.ETM_EnableInterrupts) for ETM_EnableInterrupts
+    etm_pwm_example.o(i.ETM_CaptureFunc) refers to etm.o(i.ETM_StartCapture) for ETM_StartCapture
+    etm_pwm_example.o(i.ETM_CaptureFunc) refers to etm_pwm_example.o(i.ETM1Callback) for ETM1Callback
+    etm_pwm_example.o(i.ETM_CaptureFunc) refers to etm_pwm_example.o(.data) for .data
+    etm_pwm_example.o(i.ETM_PWMGeneratorByCenterAlignedMode) refers to memseta.o(.text) for __aeabi_memclr4
+    etm_pwm_example.o(i.ETM_PWMGeneratorByCenterAlignedMode) refers to etm.o(i.ETM_InitTimeBase) for ETM_InitTimeBase
+    etm_pwm_example.o(i.ETM_PWMGeneratorByCenterAlignedMode) refers to etm.o(i.ETM_SetPWMDuty) for ETM_SetPWMDuty
+    etm_pwm_example.o(i.ETM_PWMGeneratorByCenterAlignedMode) refers to etm.o(i.ETM_SetPWMChannel) for ETM_SetPWMChannel
+    etm_pwm_example.o(i.ETM_PWMGeneratorByCenterAlignedMode) refers to etm.o(i.ETM_StartPWM) for ETM_StartPWM
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to memseta.o(.text) for __aeabi_memclr4
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to etm_pwm_example.o(i.ETM0Callback) for ETM0Callback
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to etm.o(i.ETM_InitTimeBase) for ETM_InitTimeBase
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to etm.o(i.ETM_SetPWMDuty) for ETM_SetPWMDuty
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to etm.o(i.ETM_SetPWMChannel) for ETM_SetPWMChannel
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to etm.o(i.ETM_EnableInterrupts) for ETM_EnableInterrupts
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to etm.o(i.ETM_StartPWM) for ETM_StartPWM
+    etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) refers to etm_pwm_example.o(.data) for .data
+    etm_pwm_example.o(i.PINMUX_Config) refers to gpio.o(i.GPIO_Init) for GPIO_Init
+    etm_pwm_example.o(i.main) refers to systick.o(i.SysTick_Init) for SysTick_Init
+    etm_pwm_example.o(i.main) refers to clock.o(i.PeriphClk_SetConfig) for PeriphClk_SetConfig
+    etm_pwm_example.o(i.main) refers to etm_pwm_example.o(i.PINMUX_Config) for PINMUX_Config
+    etm_pwm_example.o(i.main) refers to etm_pwm_example.o(i.ETM_PWMGeneratorByEdgeAlignedMode) for ETM_PWMGeneratorByEdgeAlignedMode
+    etm_pwm_example.o(i.main) refers to etm_pwm_example.o(i.ETM_CaptureFunc) for ETM_CaptureFunc
+    etm_pwm_example.o(i.main) refers to etm_pwm_example.o(i.ETM_PWMGeneratorByCenterAlignedMode) for ETM_PWMGeneratorByCenterAlignedMode
+    printf.o(i.DebugConsoleInit) refers to printf.o(i.UartPinMuxConfig) for UartPinMuxConfig
+    printf.o(i.UartPinMuxConfig) refers to gpio.o(i.GPIO_Init) for GPIO_Init
+    sysinit.o(i.SystemInit) refers to clock.o(i.OSC_SetConfig) for OSC_SetConfig
+    sysinit.o(i.SystemInit) refers to clock.o(i.CLOCK_SetConfig) for CLOCK_SetConfig
+    systick.o(i.SysTick_DelayAfterTick) refers to systick.o(.data) for .data
+    systick.o(i.SysTick_DelayMS) refers to systick.o(i.SysTick_DelayUS) for SysTick_DelayUS
+    systick.o(i.SysTick_DelayTicks) refers to systick.o(.data) for .data
+    systick.o(i.SysTick_DelayUS) refers to systick.o(.data) for .data
+    systick.o(i.SysTick_GetSysTime) refers to systick.o(.data) for .data
+    systick.o(i.SysTick_Init) refers to systick.o(.data) for .data
+    systick.o(i.SysTick_Init_Ex) refers to uidiv.o(.text) for __aeabi_uidivmod
+    systick.o(i.SysTick_Init_Ex) refers to systick.o(.data) for .data
+    systick.o(i.SysTick_Interval) refers to systick.o(.data) for .data
+    systick.o(i.Systick_InterruptHandler) refers to systick.o(i.Systick_Callback) for Systick_Callback
+    systick.o(i.Systick_InterruptHandler) refers to systick.o(.data) for .data
+    systick.o(i.WaitTillTimeout) refers to systick.o(.data) for .data
+    systick.o(i.WaitTimerInit) refers to systick.o(.data) for .data
+    clock.o(i.CLOCK_SetConfig) refers to clock.o(i.Clock_IsNowStable) for Clock_IsNowStable
+    clock.o(i.OSC_GetConfig) refers to clock.o(i.Clock_GetPllReferenceClock) for Clock_GetPllReferenceClock
+    clock.o(i.PeriphClk_SetConfig) refers to clock.o(i.Clock_IsNowStable) for Clock_IsNowStable
+    clock.o(i.PeriphClk_SetConfig) refers to clock.o(i.Clock_GetPllReferenceClock) for Clock_GetPllReferenceClock
+    gpio.o(i.GPIO_DeInit) refers to gpio.o(i.GPIO_GetInstance) for GPIO_GetInstance
+    gpio.o(i.GPIO_DeInit) refers to gpio.o(i.GPIO_SetPullUp) for GPIO_SetPullUp
+    gpio.o(i.GPIO_DeInit) refers to gpio.o(.data) for .data
+    gpio.o(i.GPIO_GetInstance) refers to gpio.o(.constdata) for .constdata
+    gpio.o(i.GPIO_Init) refers to gpio.o(i.GPIO_GetInstance) for GPIO_GetInstance
+    gpio.o(i.GPIO_Init) refers to gpio.o(i.GPIO_SetPullUp) for GPIO_SetPullUp
+    gpio.o(i.GPIO_Init) refers to gpio.o(.data) for .data
+    gpio.o(i.GPIO_Init) refers to gpio.o(.constdata) for .constdata
+    gpio.o(i.GPIO_SetPinFilter) refers to gpio.o(i.GPIO_GetInstance) for GPIO_GetInstance
+    etm.o(i.ETM0_IRQHandler) refers to etm.o(i.ETM_CommonIRQHandler) for ETM_CommonIRQHandler
+    etm.o(i.ETM0_IRQHandler) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM1_IRQHandler) refers to etm.o(i.ETM_CommonIRQHandler) for ETM_CommonIRQHandler
+    etm.o(i.ETM1_IRQHandler) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM2_IRQHandler) refers to etm.o(i.ETM_CommonIRQHandler) for ETM_CommonIRQHandler
+    etm.o(i.ETM2_IRQHandler) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM3_IRQHandler) refers to etm.o(i.ETM_CommonIRQHandler) for ETM_CommonIRQHandler
+    etm.o(i.ETM3_IRQHandler) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM4_IRQHandler) refers to etm.o(i.ETM_CommonIRQHandler) for ETM_CommonIRQHandler
+    etm.o(i.ETM4_IRQHandler) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM5_IRQHandler) refers to etm.o(i.ETM_CommonIRQHandler) for ETM_CommonIRQHandler
+    etm.o(i.ETM5_IRQHandler) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM_ConfigSync) refers to uread4.o(.text) for __aeabi_uread4
+    etm.o(i.ETM_GetInstance) refers to etm.o(.constdata) for .constdata
+    etm.o(i.ETM_InitCapture) refers to etm.o(i.ETM_GetInstance) for ETM_GetInstance
+    etm.o(i.ETM_InitCapture) refers to etm.o(i.ETM_StopTimeBase) for ETM_StopTimeBase
+    etm.o(i.ETM_InitCapture) refers to etm.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    etm.o(i.ETM_InitCapture) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM_InitCapture) refers to etm.o(.constdata) for .constdata
+    etm.o(i.ETM_InitTimeBase) refers to etm.o(i.ETM_GetInstance) for ETM_GetInstance
+    etm.o(i.ETM_InitTimeBase) refers to etm.o(i.ETM_StopTimeBase) for ETM_StopTimeBase
+    etm.o(i.ETM_InitTimeBase) refers to etm.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    etm.o(i.ETM_InitTimeBase) refers to etm.o(.bss) for .bss
+    etm.o(i.ETM_InitTimeBase) refers to etm.o(.constdata) for .constdata
+    etm.o(i.ETM_SetSyncSource) refers to systick.o(i.SysTick_DelayUS) for SysTick_DelayUS
+    etm.o(i.ETM_StartCapture) refers to etm.o(i.ETM_StartTimeBase) for ETM_StartTimeBase
+    etm.o(i.ETM_StartPWM) refers to etm.o(i.ETM_StartTimeBase) for ETM_StartTimeBase
+    etm.o(i.ETM_StartTimeBase) refers to etm.o(i.ETM_WaitTbStop) for ETM_WaitTbStop
+    etm.o(i.ETM_StopCapture) refers to etm.o(i.ETM_StopTimeBase) for ETM_StopTimeBase
+    etm.o(i.ETM_StopPWM) refers to etm.o(i.ETM_StopTimeBase) for ETM_StopTimeBase
+    etm.o(i.ETM_StopTimeBase) refers to etm.o(i.ETM_WaitTbStop) for ETM_WaitTbStop
+    etm.o(i.ETM_WaitTbStop) refers to systick.o(i.SysTick_DelayUS) for SysTick_DelayUS
+    adc.o(i.ADC_ChannelConfig) refers to adc.o(i.ADC_TryLock) for ADC_TryLock
+    adc.o(i.ADC_ChannelConfig) refers to adc.o(i.ADC_SelectChannel) for ADC_SelectChannel
+    adc.o(i.ADC_CompareConfig) refers to adc.o(i.ADC_TryLock) for ADC_TryLock
+    adc.o(i.ADC_CompareModeDisable) refers to adc.o(i.ADC_TryLock) for ADC_TryLock
+    adc.o(i.ADC_CompareModeEnable) refers to adc.o(i.ADC_TryLock) for ADC_TryLock
+    adc.o(i.ADC_DeInit) refers to adc.o(i.ADC_TryLock) for ADC_TryLock
+    adc.o(i.ADC_DmaCallback) refers to dma.o(i.DMA_DeInit) for DMA_DeInit
+    adc.o(i.ADC_DmaCallback) refers to adc.o(i.ADC_BufConvertValue) for ADC_BufConvertValue
+    adc.o(i.ADC_DmaCallback) refers to adc.o(.data) for .data
+    adc.o(i.ADC_DmaConfig) refers to dma.o(i.DMA_Init) for DMA_Init
+    adc.o(i.ADC_DmaConfig) refers to dma.o(i.DMA_Start) for DMA_Start
+    adc.o(i.ADC_DmaConfig) refers to adc.o(i.ADC_DmaCallback) for ADC_DmaCallback
+    adc.o(i.ADC_DmaConfig) refers to adc.o(.bss) for .bss
+    adc.o(i.ADC_Init) refers to memseta.o(.text) for __aeabi_memclr4
+    adc.o(i.ADC_Init) refers to adc.o(i.Hold_ResetStatusTillStable) for Hold_ResetStatusTillStable
+    adc.o(i.ADC_Init) refers to adc.o(i.ADC_TryLock) for ADC_TryLock
+    adc.o(i.ADC_Init) refers to adc.o(.data) for .data
+    adc.o(i.ADC_Init) refers to adc.o(.bss) for .bss
+    adc.o(i.ADC_ReadConvertValue) refers to adc.o(i.ADC_TryLock) for ADC_TryLock
+    adc.o(i.ADC_ReadConvertValue) refers to adc.o(i.ADC_DmaConfig) for ADC_DmaConfig
+    adc.o(i.ADC_ReadConvertValue) refers to adc.o(i.ADC_SelectChannel) for ADC_SelectChannel
+    adc.o(i.ADC_ReadConvertValue) refers to systick.o(i.WaitTimerInit) for WaitTimerInit
+    adc.o(i.ADC_ReadConvertValue) refers to systick.o(i.WaitTillTimeout) for WaitTillTimeout
+    adc.o(i.ADC_ReadConvertValue) refers to adc.o(i.ADC_BufConvertValue) for ADC_BufConvertValue
+    adc.o(i.ADC_ReadConvertValue) refers to adc.o(i.ADC_FifoConvertValue) for ADC_FifoConvertValue
+    adc.o(i.ADC_SequenceConfig) refers to memcpya.o(.text) for __aeabi_memcpy
+    adc.o(i.ADC_SequenceConfig) refers to adc.o(i.ADC_SelectChannel) for ADC_SelectChannel
+    adc.o(i.INT26_Handler) refers to adc.o(i.ADC_FifoConvertValue) for ADC_FifoConvertValue
+    adc.o(i.INT26_Handler) refers to printfb.o(i.__0printf$bare) for __2printf
+    adc.o(i.INT26_Handler) refers to adc.o(.data) for .data
+    dma.o(i.DMA_Init) refers to dma.o(.constdata) for .constdata
+    dma.o(i.DMA_Init) refers to dma.o(.data) for .data
+    dma.o(i.INT20_Handler) refers to dma.o(i.DMA_CommonIRQHandler) for DMA_CommonIRQHandler
+    dma.o(i.INT20_Handler) refers to dma.o(.data) for .data
+    startup_emf660x.o(RESET) refers to startup_emf660x.o(STACK) for __initial_sp
+    startup_emf660x.o(RESET) refers to startup_emf660x.o(.text) for Reset_Handler
+    startup_emf660x.o(RESET) refers to systick.o(i.Systick_InterruptHandler) for INT15_Handler
+    startup_emf660x.o(RESET) refers to dma.o(i.INT20_Handler) for INT20_Handler
+    startup_emf660x.o(RESET) refers to adc.o(i.INT26_Handler) for INT26_Handler
+    startup_emf660x.o(RESET) refers to etm.o(i.ETM0_IRQHandler) for INT27_Handler
+    startup_emf660x.o(RESET) refers to etm.o(i.ETM1_IRQHandler) for INT28_Handler
+    startup_emf660x.o(RESET) refers to etm.o(i.ETM2_IRQHandler) for INT29_Handler
+    startup_emf660x.o(RESET) refers to etm.o(i.ETM3_IRQHandler) for INT30_Handler
+    startup_emf660x.o(RESET) refers to etm.o(i.ETM4_IRQHandler) for INT40_Handler
+    startup_emf660x.o(RESET) refers to etm.o(i.ETM5_IRQHandler) for INT41_Handler
+    startup_emf660x.o(.text) refers to sysinit.o(i.SystemInit) for SystemInit
+    startup_emf660x.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to printf.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to printf.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to printf.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to printf.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to printf.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to printf.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to printf.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to printf.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to printf.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to printf.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to printf.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to printf.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to printf.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to printf.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to printf.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to printf.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to printf.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to printf.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to printf.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to printf.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to printf.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to printf.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to printf.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to printf.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to printf.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to printf.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to printf.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to printf.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to printf.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to printf.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to printf.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to printf.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to printf.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to printf.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to printf.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to printf.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to printf.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to printf.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to printf.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to printf.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to printf.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to printf.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to printf.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to printf.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_emf660x.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_emf660x.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to etm_pwm_example.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to etm_pwm_example.o(i.main) for main
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing etm_pwm_example.o(.rev16_text), (4 bytes).
+    Removing etm_pwm_example.o(.revsh_text), (4 bytes).
+    Removing etm_pwm_example.o(i.ADC_Callback), (2 bytes).
+    Removing common.o(.rev16_text), (4 bytes).
+    Removing common.o(.revsh_text), (4 bytes).
+    Removing printf.o(.rev16_text), (4 bytes).
+    Removing printf.o(.revsh_text), (4 bytes).
+    Removing printf.o(i.DebugConsoleInit), (44 bytes).
+    Removing printf.o(i.UartPinMuxConfig), (144 bytes).
+    Removing sysinit.o(.rev16_text), (4 bytes).
+    Removing sysinit.o(.revsh_text), (4 bytes).
+    Removing systick.o(.rev16_text), (4 bytes).
+    Removing systick.o(.revsh_text), (4 bytes).
+    Removing systick.o(i.SysTick_DelayAfterTick), (48 bytes).
+    Removing systick.o(i.SysTick_DelayMS), (40 bytes).
+    Removing systick.o(i.SysTick_DelayTicks), (48 bytes).
+    Removing systick.o(i.SysTick_Disable), (16 bytes).
+    Removing systick.o(i.SysTick_Get), (12 bytes).
+    Removing systick.o(i.SysTick_GetSysTime), (12 bytes).
+    Removing systick.o(i.SysTick_Init_Ex), (112 bytes).
+    Removing systick.o(i.SysTick_Interval), (24 bytes).
+    Removing systick.o(i.WaitTillTimeout), (52 bytes).
+    Removing systick.o(i.WaitTimerInit), (20 bytes).
+    Removing clock.o(.rev16_text), (4 bytes).
+    Removing clock.o(.revsh_text), (4 bytes).
+    Removing clock.o(i.CLOCK_GetConfig), (44 bytes).
+    Removing clock.o(i.OSC_GetConfig), (92 bytes).
+    Removing clock.o(i.PeriphClk_GetConfig), (92 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing gpio.o(i.GPIO_DeInit), (168 bytes).
+    Removing gpio.o(i.GPIO_PinRead), (14 bytes).
+    Removing gpio.o(i.GPIO_PinToggle), (30 bytes).
+    Removing gpio.o(i.GPIO_PinWrite), (28 bytes).
+    Removing gpio.o(i.GPIO_SetPinDirection), (34 bytes).
+    Removing gpio.o(i.GPIO_SetPinFilter), (384 bytes).
+    Removing gpio.o(i.GPIO_TriggerADC), (16 bytes).
+    Removing etm.o(.rev16_text), (4 bytes).
+    Removing etm.o(.revsh_text), (4 bytes).
+    Removing etm.o(i.ETM_ConfigSync), (84 bytes).
+    Removing etm.o(i.ETM_DisableInterrupts), (8 bytes).
+    Removing etm.o(i.ETM_SetSoftwareForceOutput), (42 bytes).
+    Removing etm.o(i.ETM_SetSyncSource), (64 bytes).
+    Removing etm.o(i.ETM_SetTriggerMode), (82 bytes).
+    Removing etm.o(i.ETM_StopCapture), (30 bytes).
+    Removing etm.o(i.ETM_StopPWM), (14 bytes).
+    Removing etm.o(i.ETM_TriggerADC), (30 bytes).
+    Removing etm.o(.data), (4 bytes).
+    Removing pes.o(.rev16_text), (4 bytes).
+    Removing pes.o(.revsh_text), (4 bytes).
+    Removing adc.o(.rev16_text), (4 bytes).
+    Removing adc.o(.revsh_text), (4 bytes).
+    Removing adc.o(i.ACMP_TRIGER_ADC), (4 bytes).
+    Removing adc.o(i.ADC_BufConvertValue), (14 bytes).
+    Removing adc.o(i.ADC_ChannelConfig), (108 bytes).
+    Removing adc.o(i.ADC_CompareConfig), (78 bytes).
+    Removing adc.o(i.ADC_CompareModeDisable), (38 bytes).
+    Removing adc.o(i.ADC_CompareModeEnable), (38 bytes).
+    Removing adc.o(i.ADC_DeInit), (68 bytes).
+    Removing adc.o(i.ADC_DmaCallback), (96 bytes).
+    Removing adc.o(i.ADC_DmaConfig), (104 bytes).
+    Removing adc.o(i.ADC_Init), (268 bytes).
+    Removing adc.o(i.ADC_ReadConvertValue), (216 bytes).
+    Removing adc.o(i.ADC_SelectChannel), (50 bytes).
+    Removing adc.o(i.ADC_SequenceConfig), (112 bytes).
+    Removing adc.o(i.ADC_TryLock), (18 bytes).
+    Removing adc.o(i.GPIO_TRIGER_ADC), (4 bytes).
+    Removing adc.o(i.Hold_ResetStatusTillStable), (12 bytes).
+    Removing adc.o(i.RTC_TRIGER_ADC), (4 bytes).
+    Removing adc.o(.bss), (20 bytes).
+    Removing dma.o(.rev16_text), (4 bytes).
+    Removing dma.o(.revsh_text), (4 bytes).
+    Removing dma.o(i.DMA_DeInit), (48 bytes).
+    Removing dma.o(i.DMA_GetDefaultConfig), (12 bytes).
+    Removing dma.o(i.DMA_Init), (168 bytes).
+    Removing dma.o(i.DMA_Start), (208 bytes).
+    Removing dma.o(.constdata), (4 bytes).
+    Removing startup_emf660x.o(HEAP), (0 bytes).
+    Removing dadd.o(.text), (356 bytes).
+    Removing dmul.o(.text), (208 bytes).
+    Removing ddiv.o(.text), (240 bytes).
+    Removing dfixul.o(.text), (64 bytes).
+    Removing cdrcmple.o(.text), (40 bytes).
+    Removing depilogue.o(.text), (190 bytes).
+    Removing depilogue.o(i.__ARM_clz), (46 bytes).
+
+85 unused section(s) (total 4758 bytes) removed from the image.

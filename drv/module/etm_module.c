@@ -4,7 +4,7 @@
 #include <drv/dev/gpio.h>
 
 
-#define PERIOD_5us   		120	//120*2/48000000 = 0.000005s = 0.005ms = 5us
+#define PERIOD_500us   		12000	//12000*2/48000000 = 0.0005s = 0.5ms
 #define CLK_8M      		 0
 #define CLK_48M     		 1
 
@@ -34,7 +34,7 @@ int etm_timerinit(void)
     etmInfo.prescaler = ETM_PSC_DIV_2;		//·ÖÆµ ETM_PSC_DIV_256
     etmInfo.countMode = ETM_COUNT_UP;
     etmInfo.deadTime = 0;
-    etmInfo.period = PERIOD_5us;
+    etmInfo.period = PERIOD_500us;
 		etmInfo.callback = ETM2Callback;
 		
 		ret = ETM_InitTimeBase(ETM2, &etmInfo, &g_PWMHandle);

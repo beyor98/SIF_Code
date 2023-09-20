@@ -10,6 +10,7 @@
       <TargetName>gpio_example</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -381,9 +382,9 @@
           <GroupName>prj</GroupName>
           <Files>
             <File>
-              <FileName>gpio_example.c</FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\gpio_example.c</FilePath>
+              <FilePath>..\..\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -434,6 +435,41 @@
               <FileName>dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\drv\dev\dma\dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\dev\uart\uart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module</GroupName>
+          <Files>
+            <File>
+              <FileName>etm_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\etm_module.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\gpio_module.c</FilePath>
+            </File>
+            <File>
+              <FileName>sif_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\sif_module.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lib</GroupName>
+          <Files>
+            <File>
+              <FileName>printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\lib\common\printf.c</FilePath>
             </File>
           </Files>
         </Group>
