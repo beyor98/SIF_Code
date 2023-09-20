@@ -8,29 +8,29 @@
 
 
 int etm_timerinit(void);
-void gpio_output_init(void);
-void gpio_input_init(void);
-
-
-#define CLK_8M      		 0
-#define CLK_48M     		 1
-
-
+void sif_process(void);
+void gpio_output_init(GPIO_Device_T *pGPIO, uint32_t pin);
+void gpio_input_init(GPIO_Device_T *pGPIO, uint32_t pin);
+int gpio_interrupt_falling_init(GPIO_Device_T *pGPIO, uint32_t pin);
 
 int main(void)
 {
+		int ret;
 		SysTick_Init();
 		SysTick_DelayMS(2000);
 	
 		DebugConsoleInit(115200L);
 
-		gpio_output_init();
+		//gpio_output_init(GPIOA, GPIO_PIN_5);
+		//gpio_input_init(GPIOC, GPIO_PIN_8);
+		ret = gpio_interrupt_falling_init(GPIOA, GPIO_PIN_8);
 	
-		etm_timerinit();
+		//etm_timerinit();
+		printf("enter main function!\n");
 	
     while (1)
     {
-
+			//sif_process();
     }
 }
 

@@ -95,18 +95,16 @@ unsigned char verifyFrame(unsigned char frame[])
 
 void ETM2Callback(ETM_Device_T *pETM, uint32_t Event, unsigned long Param)
 {
-		if(1)		//if (start_H_L_Level_timming_flag==1)
+		if(start_H_L_Level_timming_flag==1)
 		{
 				H_L_Level_time_cnt++;     //高低电平维持时间计数变量
-				
 		}
-		count++;
-		if(count==100)
-		{
-			count=0;
-			GPIO_PinToggle(GPIOA8);
-		}
-	
+//		count++;
+//		if(count==100)
+//		{
+//			count=0;
+//			GPIO_PinToggle(GPIOA8);
+//		}
 }
 
 /*******************************************************************************

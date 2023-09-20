@@ -4,7 +4,7 @@
 #include <drv/dev/gpio.h>
 
 
-#define PERIOD_5us   		120 	//120*2/48000000 = 0.000005s = 0.005ms = 5us
+#define PERIOD_5us   		120	//120*2/48000000 = 0.000005s = 0.005ms = 5us
 #define CLK_8M      		 0
 #define CLK_48M     		 1
 

@@ -411,11 +411,6 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\lib\common\common.c</FilePath>
             </File>
-            <File>
-              <FileName>printf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\lib\common\printf.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -465,6 +460,16 @@
               <FileName>sif_module.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\drv\module\sif_module.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lib</GroupName>
+          <Files>
+            <File>
+              <FileName>printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\lib\common\printf.c</FilePath>
             </File>
           </Files>
         </Group>

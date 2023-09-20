@@ -1,6 +1,6 @@
 Dependencies for Project 'gpio_example', Target 'gpio_example': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (..\..\gpio_example.c)(0x65096297)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\gpio_example.o --omf_browse .\objects\gpio_example.crf --depend .\objects\gpio_example.d)
+F (..\..\gpio_example.c)(0x650A9DBD)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\gpio_example.o --omf_browse .\objects\gpio_example.crf --depend .\objects\gpio_example.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
@@ -20,7 +20,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -54,7 +54,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -86,7 +86,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -118,7 +118,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -132,39 +132,6 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
 I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
-F (..\..\..\..\..\lib\common\printf.c)(0x65095F2C)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\printf.o --omf_browse .\objects\printf.crf --depend .\objects\printf.d)
-I (..\..\..\..\..\inc\common.h)(0x61C44223)
-I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
-I (..\..\..\gpio\config.h)(0x61C44224)
-I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
-I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
-I (..\..\..\..\..\inc\drv\cmsis\core_cm0.h)(0x61C4421C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (..\..\..\..\..\inc\drv\cmsis\core_cmInstr.h)(0x61C4421C)
-I (..\..\..\..\..\inc\drv\cmsis\core_cmFunc.h)(0x61C4421C)
-I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
-I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
-I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
-I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
-I (..\..\..\..\..\inc\drv/dev/uart.h)(0x61C44223)
 F (..\..\..\..\..\drv\dev\clock\clock.c)(0x61C44223)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\clock.o --omf_browse .\objects\clock.crf --depend .\objects\clock.d)
 I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
@@ -184,7 +151,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -216,7 +183,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -248,7 +215,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -281,7 +248,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -313,7 +280,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -327,7 +294,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
 I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
-F (..\..\..\..\..\drv\module\etm_module.c)(0x6509701B)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\etm_module.o --omf_browse .\objects\etm_module.crf --depend .\objects\etm_module.d)
+F (..\..\..\..\..\drv\module\etm_module.c)(0x650A54A4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\etm_module.o --omf_browse .\objects\etm_module.crf --depend .\objects\etm_module.d)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
 I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
@@ -345,7 +312,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -361,7 +328,7 @@ I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\drv/dev/uart.h)(0x61C44223)
 I (..\..\..\..\..\inc\drv/dev/etm.h)(0x61C4421C)
-F (..\..\..\..\..\drv\module\gpio_module.c)(0x65095FAC)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\gpio_module.o --omf_browse .\objects\gpio_module.crf --depend .\objects\gpio_module.d)
+F (..\..\..\..\..\drv\module\gpio_module.c)(0x650A9EC7)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\gpio_module.o --omf_browse .\objects\gpio_module.crf --depend .\objects\gpio_module.d)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
 I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
@@ -379,7 +346,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -394,7 +361,7 @@ I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
 I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\drv/dev/uart.h)(0x61C44223)
-F (..\..\..\..\..\drv\module\sif_module.c)(0x65096DA5)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\sif_module.o --omf_browse .\objects\sif_module.crf --depend .\objects\sif_module.d)
+F (..\..\..\..\..\drv\module\sif_module.c)(0x650A54A4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\sif_module.o --omf_browse .\objects\sif_module.crf --depend .\objects\sif_module.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
 I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
@@ -413,7 +380,7 @@ I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
-I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
 I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
@@ -427,5 +394,38 @@ I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
 I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\drv/dev/etm.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/uart.h)(0x61C44223)
+F (..\..\..\..\..\lib\common\printf.c)(0x650A8991)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\printf_1.o --omf_browse .\objects\printf_1.crf --depend .\objects\printf_1.d)
+I (..\..\..\..\..\inc\common.h)(0x61C44223)
+I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (..\..\..\gpio\config.h)(0x61C44224)
+I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv\cmsis\core_cm0.h)(0x61C4421C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\..\..\..\..\inc\drv\cmsis\core_cmInstr.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv\cmsis\core_cmFunc.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x650A9D03)
+I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\drv/dev/uart.h)(0x61C44223)
 F (RTE\Device\F6608HCPCC\startup_f6601c.s)(0x5951D224)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "CHIP_F6601C SETA 1"--list .\listings\startup_f6601c.lst --xref -o .\objects\startup_f6601c.o --depend .\objects\startup_f6601c.d)

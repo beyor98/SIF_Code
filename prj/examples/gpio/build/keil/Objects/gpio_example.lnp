@@ -3,7 +3,6 @@
 ".\objects\sysinit.o"
 ".\objects\systick.o"
 ".\objects\common.o"
-".\objects\printf.o"
 ".\objects\clock.o"
 ".\objects\gpio.o"
 ".\objects\etm.o"
@@ -12,6 +11,7 @@
 ".\objects\etm_module.o"
 ".\objects\gpio_module.o"
 ".\objects\sif_module.o"
+".\objects\printf_1.o"
 ".\objects\startup_f6601c.o"
 --library_type=microlib --strict --scatter ".\Objects\gpio_example.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
