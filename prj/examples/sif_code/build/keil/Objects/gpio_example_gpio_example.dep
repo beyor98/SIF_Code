@@ -1,6 +1,6 @@
 Dependencies for Project 'gpio_example', Target 'gpio_example': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (..\..\main.c)(0x650A9DBD)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\..\main.c)(0x650BA074)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
@@ -294,7 +294,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
 I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
-F (..\..\..\..\..\drv\module\etm_module.c)(0x650A54A4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\etm_module.o --omf_browse .\objects\etm_module.crf --depend .\objects\etm_module.d)
+F (..\..\..\..\..\drv\module\etm_module.c)(0x650B9D63)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\etm_module.o --omf_browse .\objects\etm_module.crf --depend .\objects\etm_module.d)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
 I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
@@ -361,7 +361,7 @@ I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
 I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
 I (..\..\..\..\..\inc\drv/dev/uart.h)(0x61C44223)
-F (..\..\..\..\..\drv\module\sif_module.c)(0x650A54A4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\sif_module.o --omf_browse .\objects\sif_module.crf --depend .\objects\sif_module.d)
+F (..\..\..\..\..\drv\module\sif_module.c)(0x650B9FE1)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\gpio -I ..\..\..\..\..\inc -I ..\..\..\..\..\inc\drv\cmsis-I.\RTE\_gpio_example-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\GM66xx_DFP\1.4.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C-o .\objects\sif_module.o --omf_browse .\objects\sif_module.crf --depend .\objects\sif_module.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\..\..\..\..\inc\common.h)(0x61C44223)
 I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
