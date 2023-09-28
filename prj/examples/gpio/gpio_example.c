@@ -14,6 +14,7 @@ void gpio_output_init(GPIO_Device_T *pGPIO, uint32_t Pin);
 void gpio_input_init(GPIO_Device_T *pGPIO, uint32_t Pin);
 int gpio_interrupt_falling_init(GPIO_Device_T *pGPIO, uint32_t Pin);
 
+
 int main(void)
 {
 		SysTick_Init();
@@ -26,13 +27,11 @@ int main(void)
 	
 		etm1_timerinit();
 		etm2_timerinit();
-		//printf("enter main function!\n");
+		//gpio_interrupt_falling_init(GPIOA, GPIO_PIN_8);
+		printf("enter main function!\n");
 	
     while (1)
     {
-				sif_process();
+			sif_process();
     }
 }
-
-
-

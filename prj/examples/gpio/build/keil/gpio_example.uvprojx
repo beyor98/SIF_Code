@@ -447,19 +447,29 @@
           <GroupName>module</GroupName>
           <Files>
             <File>
-              <FileName>etm_module.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\drv\module\etm_module.c</FilePath>
-            </File>
-            <File>
               <FileName>gpio_module.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\drv\module\gpio_module.c</FilePath>
             </File>
             <File>
+              <FileName>etm_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\etm_module.c</FilePath>
+            </File>
+            <File>
               <FileName>sif_module.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\drv\module\sif_module.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_module.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\drv\module\lcd_module.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_module.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\..\drv\module\lcd_module.h</FilePath>
             </File>
           </Files>
         </Group>
