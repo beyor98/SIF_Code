@@ -1,7 +1,6 @@
-
 #include <stdio.h>
 #include <common.h>
-
+#include "TM1640.h"
 #include <drv/dev/gpio.h>
 #include <drv/dev/etm.h>
 #include <drv/dev/uart.h>
@@ -194,7 +193,7 @@ void sif_process(void)
 {
 		unsigned char i;
 
-		Receive_Data_Baud_Adjust_Bit_Handle();
+		//Receive_Data_Baud_Adjust_Bit_Handle();
 		
 		if (read_success == 1)              //如果成功读取一帧数据
 		{
@@ -215,5 +214,6 @@ void sif_process(void)
 				}
 				read_success = 0;               //读取一帧数据清0
 		}
-		aip1640_test();
+		TM1640_Init();
+		SysTick_DelayMS(1000);
 }

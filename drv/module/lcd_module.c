@@ -4,8 +4,6 @@
 #include <common.h>
 #include "lcd_module.h"
 
-//typedef unsigned          char uint8_t;
-//typedef unsigned short    int uint16_t;
 
 #define SET_SCLK()      PIN_SET(GPIOA7)
 #define CLK_SCLK()      PIN_CLEAR(GPIOA7)

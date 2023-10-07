@@ -462,14 +462,14 @@
               <FilePath>..\..\..\..\..\drv\module\sif_module.c</FilePath>
             </File>
             <File>
-              <FileName>lcd_module.c</FileName>
+              <FileName>TM1640.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\drv\module\lcd_module.c</FilePath>
+              <FilePath>..\..\..\..\..\drv\module\TM1640.c</FilePath>
             </File>
             <File>
-              <FileName>lcd_module.h</FileName>
+              <FileName>TM1640.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\drv\module\lcd_module.h</FilePath>
+              <FilePath>..\..\..\..\..\drv\module\TM1640.h</FilePath>
             </File>
           </Files>
         </Group>

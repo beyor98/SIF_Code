@@ -275,7 +275,7 @@
 
   <Group>
     <GroupName>drv</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -390,8 +390,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\drv\module\lcd_module.c</PathWithFileName>
-      <FilenameWithoutPath>lcd_module.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\..\..\drv\module\TM1640.c</PathWithFileName>
+      <FilenameWithoutPath>TM1640.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -402,8 +402,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\drv\module\lcd_module.h</PathWithFileName>
-      <FilenameWithoutPath>lcd_module.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\..\..\drv\module\TM1640.h</PathWithFileName>
+      <FilenameWithoutPath>TM1640.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

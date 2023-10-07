@@ -31,5 +31,6 @@
 .\objects\sif_module.o: ..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h
 .\objects\sif_module.o: ..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h
 .\objects\sif_module.o: ..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h
+.\objects\sif_module.o: ..\..\..\..\..\drv\module\TM1640.h
 .\objects\sif_module.o: ..\..\..\..\..\inc\drv/dev/etm.h
 .\objects\sif_module.o: ..\..\..\..\..\inc\drv/dev/uart.h
