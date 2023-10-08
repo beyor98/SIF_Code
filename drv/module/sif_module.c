@@ -214,6 +214,6 @@ void sif_process(void)
 				}
 				read_success = 0;               //读取一帧数据清0
 		}
-		TM1640_Init();
+		aip1640_WriteEightSegmentCode();
 		SysTick_DelayMS(1000);
 }

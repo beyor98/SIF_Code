@@ -1,7 +1,7 @@
 #ifndef __TM1640_H
 #define __TM1640_H
 
-
+#include <stdint.h>
 //#define OFF 0;
 //#define ON 1;
 
@@ -51,8 +51,11 @@ extern unsigned char table[];
 
 extern union EightSegmentCode eightSegmentCode[];
 
-void TM1640_Init(void);
+void aip1640_Init(void);
 
-void TM1640_WriteEightSegmentCode(void);
+void aip1640_WriteEightSegmentCode(void);
+
+void aip1640_WriteArrayData(uint8_t startSegment, uint8_t *inputData, uint8_t length);
+
 
 #endif
