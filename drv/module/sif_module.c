@@ -207,6 +207,7 @@ void sif_process(void)
 				{
 						// 校验通过，处理数据
 						printf("---verifyFrame success!!---\n");
+						lcd_display_process(receive_data_buf);
 				} 
 				else 
 				{
@@ -214,6 +215,5 @@ void sif_process(void)
 				}
 				read_success = 0;               //读取一帧数据清0
 		}
-		aip1640_WriteEightSegmentCode();
-		SysTick_DelayMS(1000);
+
 }

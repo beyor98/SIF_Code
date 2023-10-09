@@ -53,6 +53,10 @@ extern union EightSegmentCode eightSegmentCode[];
 
 void aip1640_Init(void);
 
+void led_start_check(void);
+
+void lcd_display_process(uint8_t *sif_data_buf);
+
 void aip1640_WriteEightSegmentCode(void);
 
 void aip1640_WriteArrayData(uint8_t startSegment, uint8_t *inputData, uint8_t length);

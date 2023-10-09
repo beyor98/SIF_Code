@@ -102,6 +102,7 @@ void aip1640_Init(void)
 	aip1640_write(ON_1_16);
 	memset(eightSegmentCode, 0x0, EIGHT_SEGMENT_CODE_LENGTH);
 	aip1640_WriteArrayData(SEG1, (uint8_t *)eightSegmentCode, EIGHT_SEGMENT_CODE_LENGTH);
+	led_start_check();
 }
 
 void aip1640_WriteArrayData(uint8_t startSegment, uint8_t *inputData, uint8_t length)
@@ -119,9 +120,6 @@ void aip1640_WriteArrayData(uint8_t startSegment, uint8_t *inputData, uint8_t le
 	{
 		if (memcmp(lastInputData, inputData, EIGHT_SEGMENT_CODE_LENGTH) == 0)
 		{
-			start();
-			aip1640_WriteData(ON_1_16);
-			stop();
 			return;
 		}
 		memcpy(lastInputData, inputData, EIGHT_SEGMENT_CODE_LENGTH);
@@ -137,15 +135,89 @@ void aip1640_WriteArrayData(uint8_t startSegment, uint8_t *inputData, uint8_t le
 	stop();
 }
 
-int count=0;
-static uint8_t testInputData[EIGHT_SEGMENT_CODE_LENGTH]={0};
 void aip1640_WriteEightSegmentCode(void)
 {
-	memset(testInputData, 0x0, EIGHT_SEGMENT_CODE_LENGTH);
-	testInputData[5]=0xff;
-	testInputData[14]=0xff;
-	//count++;
-	//testInputData[4]=table[count++];
-	memcpy(eightSegmentCode, testInputData, EIGHT_SEGMENT_CODE_LENGTH);
 	aip1640_WriteArrayData(SEG1, (uint8_t *)eightSegmentCode, EIGHT_SEGMENT_CODE_LENGTH);
+}
+
+void led_start_check(void)
+{
+	int i=0;
+	for(i=1; i<10; i++)
+	{
+		eightSegmentCode[0].uint8_LED = table[i];	//Mileage
+		eightSegmentCode[1].uint8_LED = table[i];
+		eightSegmentCode[2].uint8_LED = table[i];
+		eightSegmentCode[3].uint8_LED = table[i];
+		eightSegmentCode[4].uint8_LED = table[i];
+		
+		eightSegmentCode[5].uint8_LED = table[i];	//speed
+		eightSegmentCode[6].uint8_LED = table[i];
+		eightSegmentCode[7].uint8_LED = table[i];
+		eightSegmentCode[8].uint8_LED = table[i];
+		
+		eightSegmentCode[9].uint8_LED = 0xff;			//Battery frame
+		eightSegmentCode[10].Bits.A = 1;
+		eightSegmentCode[10].Bits.B = 1;
+		eightSegmentCode[10].Bits.C = 1;					//logo
+		eightSegmentCode[10].Bits.D = 1;
+		
+		switch(i){
+        case 4: eightSegmentCode[11].Bits.A = 1;	////Battery
+								eightSegmentCode[11].Bits.B = 1;
+        case 3: eightSegmentCode[11].Bits.C = 1;
+								eightSegmentCode[11].Bits.D = 1;
+        case 2: eightSegmentCode[11].Bits.E = 1;
+								eightSegmentCode[11].Bits.F = 1;
+				case 1: eightSegmentCode[11].Bits.G = 1;
+								eightSegmentCode[11].Bits.DP = 1;
+								break;
+    }
+		
+		aip1640_WriteArrayData(SEG1, (uint8_t *)eightSegmentCode, EIGHT_SEGMENT_CODE_LENGTH);
+		SysTick_DelayMS(200);
+	}
+	
+}
+
+void lcd_display_process(uint8_t *sif_data_buf)
+{
+	static uint8_t lastInputData[EIGHT_SEGMENT_CODE_LENGTH]; 
+	static uint8_t status = 0; 
+
+	if (status == 0)
+	{
+		status = 1;
+		memcpy(lastInputData, sif_data_buf, EIGHT_SEGMENT_CODE_LENGTH);
+	}
+	else
+	{
+		if (memcmp(lastInputData, sif_data_buf, EIGHT_SEGMENT_CODE_LENGTH) == 0)
+		{
+			printf("Same as previous received data\n");
+			return;
+		}
+		memcpy(lastInputData, sif_data_buf, EIGHT_SEGMENT_CODE_LENGTH);
+	}
+	
+	if(sif_data_buf[2]>>1 & 0x01)		//P
+	{
+		eightSegmentCode[7].uint8_LED = 0x73;
+		eightSegmentCode[8].uint8_LED = 0x73;
+	}
+	
+	if(sif_data_buf[3]>>4 & 0x01)		//¿ØÖÆÆ÷¹ÊÕÏ
+	{
+		eightSegmentCode[14].Bits.C = 1;
+	}
+	
+	if(sif_data_buf[3]>>5 & 0x01)		//×ª°Ñ¹ÊÕÏ
+	{
+		eightSegmentCode[14].Bits.C = 1;
+	}
+	
+	if(sif_data_buf[3]>>6 & 0x01)		//µç»ú¹ÊÕÏ
+	{
+		eightSegmentCode[14].Bits.C = 1;
+	}
 }
