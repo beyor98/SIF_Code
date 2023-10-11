@@ -44,6 +44,7 @@ int etm2_timerinit(void);
 void gpio_input_init(void);
 void Receive_Data_Baud_Adjust_Bit_Handle(void); 
 void aip1640_test(void);
+int adc_get_voltage(void);
 
 
 
@@ -192,6 +193,7 @@ void Receive_Data_Baud_Adjust_Bit_Handle(void)
 void sif_process(void)
 {
 		unsigned char i;
+		int voltage;
 
 		//Receive_Data_Baud_Adjust_Bit_Handle();
 		
@@ -215,5 +217,7 @@ void sif_process(void)
 				}
 				read_success = 0;               //读取一帧数据清0
 		}
-
+		voltage = adc_get_voltage();
+		printf("voltage = %d\n", voltage);
+		SysTick_DelayMS(1000);
 }

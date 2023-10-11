@@ -1,0 +1,16 @@
+--cpu Cortex-M0
+".\objects\adc_demo.o"
+".\objects\sysinit.o"
+".\objects\systick.o"
+".\objects\common.o"
+".\objects\printf.o"
+".\objects\adc.o"
+".\objects\clock.o"
+".\objects\dma.o"
+".\objects\gpio.o"
+".\objects\uart.o"
+".\objects\startup_emf660x.o"
+--library_type=microlib --strict --scatter ".\Objects\adc_demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\adc_demo.map" -o .\Objects\adc_demo.axf

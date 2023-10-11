@@ -55,6 +55,8 @@ void aip1640_Init(void);
 
 void led_start_check(void);
 
+void set_always_on_light(void);
+
 void lcd_display_process(uint8_t *sif_data_buf);
 
 void aip1640_WriteEightSegmentCode(void);

@@ -200,24 +200,73 @@ void lcd_display_process(uint8_t *sif_data_buf)
 		memcpy(lastInputData, sif_data_buf, EIGHT_SEGMENT_CODE_LENGTH);
 	}
 	
+	set_always_on_light();
+	
 	if(sif_data_buf[2]>>1 & 0x01)		//P
 	{
 		eightSegmentCode[7].uint8_LED = 0x73;
 		eightSegmentCode[8].uint8_LED = 0x73;
 	}
 	
-	if(sif_data_buf[3]>>4 & 0x01)		//控制器故障
+	if(sif_data_buf[3]>>4 & 0x01)						//控制器故障
 	{
 		eightSegmentCode[14].Bits.C = 1;
 	}
 	
-	if(sif_data_buf[3]>>5 & 0x01)		//转把故障
+	if(sif_data_buf[3]>>5 & 0x01)						//转把故障
 	{
-		eightSegmentCode[14].Bits.C = 1;
+		eightSegmentCode[14].Bits.E = 1;
 	}
 	
-	if(sif_data_buf[3]>>6 & 0x01)		//电机故障
+	if(sif_data_buf[3]>>6 & 0x01)					//电机故障
 	{
-		eightSegmentCode[14].Bits.C = 1;
+		eightSegmentCode[14].Bits.A = 1;
 	}
+	
+	if((sif_data_buf[4]>>0 & 0x03) == 1)		//1档
+	{
+		eightSegmentCode[12].Bits.E = 1;
+	}
+	
+	if((sif_data_buf[4]>>0 & 0x03) == 2)		//2档
+	{
+		eightSegmentCode[14].Bits.F = 1;
+	}
+	
+	if((sif_data_buf[4]>>0 & 0x03) == 3)		//3档
+	{
+		eightSegmentCode[14].Bits.G = 1;
+	}
+	
+	if(sif_data_buf[4]>>5 & 0x01)						//刹车
+	{
+		eightSegmentCode[14].Bits.D = 1;
+	}
+	
+	if(sif_data_buf[5]>>1 & 0x01)						//电子刹车
+	{
+		eightSegmentCode[14].Bits.D = 1;
+	}
+	
+	if(sif_data_buf[5]>>2 & 0x01)						//倒车
+	{
+		eightSegmentCode[14].Bits.B = 1;
+	}
+	
+	
+	
+	aip1640_WriteArrayData(SEG1, (uint8_t *)eightSegmentCode, EIGHT_SEGMENT_CODE_LENGTH);
 }
+
+void set_always_on_light(void)
+{
+	eightSegmentCode[9].uint8_LED = 0xff;			//Battery frame
+	eightSegmentCode[10].Bits.A = 1;
+	eightSegmentCode[10].Bits.B = 1;
+	eightSegmentCode[10].Bits.C = 1;					//logo
+	eightSegmentCode[10].Bits.D = 1;
+	eightSegmentCode[10].Bits.E = 1;					//km/h
+	eightSegmentCode[10].Bits.F = 1;					//km
+}
+
+

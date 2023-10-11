@@ -1,0 +1,197 @@
+Dependencies for Project 'Flash_example', Target 'flash_example Debug': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (..\..\flash_example.c)(0x61C44224)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\flash -I ..\..\..\..\..\inc -I ..\..\..\..\..\drv\cmsis\Include-I.\RTE\_flash_example_Debug-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\EMxx_DFP\1.5.2\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C -DKEIL-o .\objects\flash_example.o --omf_browse .\objects\flash_example.crf --depend .\objects\flash_example.d)
+I (..\..\..\..\..\inc\common.h)(0x6513E8C0)
+I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (..\..\..\flash\config.h)(0x61C44224)
+I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
+I (..\..\..\..\..\drv\cmsis\Include\core_cm0.h)(0x61C4421A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmInstr.h)(0x61C4421A)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmFunc.h)(0x61C4421A)
+I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x65250E92)
+I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/flash.h)(0x61C4421C)
+F (..\..\..\..\..\drv\arch\arm\sysinit.c)(0x61C44223)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\flash -I ..\..\..\..\..\inc -I ..\..\..\..\..\drv\cmsis\Include-I.\RTE\_flash_example_Debug-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\EMxx_DFP\1.5.2\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C -DKEIL-o .\objects\sysinit.o --omf_browse .\objects\sysinit.crf --depend .\objects\sysinit.d)
+I (..\..\..\..\..\inc\common.h)(0x6513E8C0)
+I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (..\..\..\flash\config.h)(0x61C44224)
+I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
+I (..\..\..\..\..\drv\cmsis\Include\core_cm0.h)(0x61C4421A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmInstr.h)(0x61C4421A)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmFunc.h)(0x61C4421A)
+I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x65250E92)
+I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
+F (..\..\..\..\..\drv\arch\arm\systick.c)(0x61C44219)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\flash -I ..\..\..\..\..\inc -I ..\..\..\..\..\drv\cmsis\Include-I.\RTE\_flash_example_Debug-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\EMxx_DFP\1.5.2\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C -DKEIL-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (..\..\..\..\..\inc\common.h)(0x6513E8C0)
+I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (..\..\..\flash\config.h)(0x61C44224)
+I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
+I (..\..\..\..\..\drv\cmsis\Include\core_cm0.h)(0x61C4421A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmInstr.h)(0x61C4421A)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmFunc.h)(0x61C4421A)
+I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x65250E92)
+I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
+F (..\..\..\..\..\lib\common\common.c)(0x61C4421C)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\flash -I ..\..\..\..\..\inc -I ..\..\..\..\..\drv\cmsis\Include-I.\RTE\_flash_example_Debug-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\EMxx_DFP\1.5.2\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C -DKEIL-o .\objects\common.o --omf_browse .\objects\common.crf --depend .\objects\common.d)
+I (..\..\..\..\..\inc\common.h)(0x6513E8C0)
+I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (..\..\..\flash\config.h)(0x61C44224)
+I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
+I (..\..\..\..\..\drv\cmsis\Include\core_cm0.h)(0x61C4421A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmInstr.h)(0x61C4421A)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmFunc.h)(0x61C4421A)
+I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x65250E92)
+I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
+F (..\..\..\..\..\drv\dev\clock\clock.c)(0x61C44223)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\flash -I ..\..\..\..\..\inc -I ..\..\..\..\..\drv\cmsis\Include-I.\RTE\_flash_example_Debug-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\EMxx_DFP\1.5.2\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C -DKEIL-o .\objects\clock.o --omf_browse .\objects\clock.crf --depend .\objects\clock.d)
+I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
+I (..\..\..\..\..\inc\common.h)(0x6513E8C0)
+I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (..\..\..\flash\config.h)(0x61C44224)
+I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
+I (..\..\..\..\..\drv\cmsis\Include\core_cm0.h)(0x61C4421A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmInstr.h)(0x61C4421A)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmFunc.h)(0x61C4421A)
+I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x65250E92)
+I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
+F (..\..\..\..\..\drv\dev\nvm\flash.c)(0x61C44223)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\flash -I ..\..\..\..\..\inc -I ..\..\..\..\..\drv\cmsis\Include-I.\RTE\_flash_example_Debug-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\EMxx_DFP\1.5.2\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCHIP_F6601C -DKEIL-o .\objects\flash.o --omf_browse .\objects\flash.crf --depend .\objects\flash.d)
+I (..\..\..\..\..\inc\drv/dev/flash.h)(0x61C4421C)
+I (..\..\..\..\..\inc\common.h)(0x6513E8C0)
+I (..\..\..\..\..\inc\basic_types.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (..\..\..\flash\config.h)(0x61C44224)
+I (..\..\..\..\..\inc\drv/arch/arm_m0.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/F6601C.h)(0x61C44223)
+I (..\..\..\..\..\drv\cmsis\Include\core_cm0.h)(0x61C4421A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmInstr.h)(0x61C4421A)
+I (..\..\..\..\..\drv\cmsis\Include\core_cmFunc.h)(0x61C4421A)
+I (..\..\..\..\..\inc\drv/arch/interrupt.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/arch/systick.h)(0x61C4421C)
+I (..\..\..\..\..\inc\drv/dev/sys.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/uart/uart_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/spi/spi_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/nvm/flash_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/etm/etm_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/gpio/gpio_dev.h)(0x65250E92)
+I (..\..\..\..\..\inc\../drv/dev/dma/dma_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/i2c/i2c_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/adc/adc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/dma.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/clock.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/crc/crc_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/acmp/acmp_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\drv/dev/gpio.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/wdog/wdog_dev.h)(0x61C44223)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (..\..\..\..\..\inc\../drv/dev/hwir/hwir_dev.h)(0x61C4421A)
+I (..\..\..\..\..\inc\../drv/dev/lvd/lvd_dev.h)(0x61C44223)
+I (..\..\..\..\..\inc\../drv/dev/rtc/rtc_dev.h)(0x61C44223)
+F (RTE\Device\EMF6601VCPCC\startup_EMF660x.s)(0x636D9CC6)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_flash_example_Debug-IC:\Users\550898\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\550898\AppData\Local\Arm\Packs\Keil\EMxx_DFP\1.5.2\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "CHIP_F6601C SETA 1" --pd "FLASH_CODE_IN_RAM SETA 1"--list .\listings\startup_emf660x.lst --xref -o .\objects\startup_emf660x.o --depend .\objects\startup_emf660x.d)
